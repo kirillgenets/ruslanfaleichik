@@ -1,0 +1,26 @@
+/*******
+HEADER
+*******/
+
+.header__nav {
+	padding: 30px 0;
+}
+
+.header__menu {
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.header__menu-item {
+	color: $standart-grey;
+	margin-right: 60px;
+}
+
+.header__menu-item:last-child {
+	margin-right: 0;
+}
