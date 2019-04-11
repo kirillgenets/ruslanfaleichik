@@ -61,3 +61,37 @@ a {
 	color: $grey;
 }
 
+/*DARK TITLES FOR ABOUT SECTION AND PORTFOLIO*/
+
+.titlebar {
+	background-color: $grey;
+	margin: 0 0 60px 0;
+}
+
+.title {
+	font-size: 36px;
+	color: #fff;
+	margin: 60px 0;
+}
+
+/*TITLES RESPONSIVE*/
+
+@media screen and (max-width: 760px) {
+	.titlebar {
+		margin: 0 0 40px 0;
+	}
+
+	.title {
+		font-size: 24px;
+		margin: 30px 0;
+	}		
+}
+
+/*BUTTONS STYLING*/
+
+button {
+	width: 150px;
+	height: 30px;
+	box-sizing: border-box;
+	border: none;
+}
