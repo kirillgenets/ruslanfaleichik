@@ -408,5 +408,74 @@ ORDER SECTION
 
   .order__phone-input {
     width: 300px; } }
+/******
+CONTACTS SECTION
+******/
+.contacts__title {
+  color: #272838;
+  margin-bottom: 30px; }
+
+.contacts__phone {
+  background-color: #272838;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 60px;
+  margin-bottom: 60px; }
+
+.contacts__social-icons {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 85px; }
+
+.contacts__social-icon {
+  height: 80px;
+  width: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  margin-right: 60px; }
+
+.contacts__social-icons a:last-child .contacts__social-icon {
+  margin-right: 0; }
+
+.contacts__social-icon_fb {
+  background-image: url(../img/fb.png); }
+
+.contacts__social-icon_vk {
+  background-image: url(../img/vk.png); }
+
+.contacts__social-icon_inst {
+  background-image: url(../img/i.png); }
+
+/*RESPONSIVE*/
+@media screen and (max-width: 410px) {
+  .contacts__social-icon {
+    margin-right: 30px; }
+
+  .contacts__phone {
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-bottom: 40px; }
+
+  .contacts__social-icons {
+    margin-bottom: 60px; } }
+/*******
+FOOTER
+*******/
+.footer {
+  background-color: #272838;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0; }
 
 /*# sourceMappingURL=style.css.map */
