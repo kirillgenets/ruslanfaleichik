@@ -1,0 +1,69 @@
+/********
+ORDER SECTION
+********/
+
+.order {
+	background-color: $grey;
+	color: #fff;
+	padding-bottom: 60px;
+}
+
+.order__title {
+	margin-bottom: 40px;
+}
+
+.order__name-text, .order__phone-text {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+.order__name-input, .order__phone-input {
+	margin-bottom: 25px;
+}
+
+.order__name-input {
+	width: 150px;
+}
+
+.order__phone-input {
+	width: 330px;
+}
+
+.order__button {
+	color: $grey;
+	background-color: #fff;
+	transition: 0.3s;
+}
+
+.order__past-scriptum {
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 1000px) {
+	.order__button:hover {
+		color: #fff;
+		background-color: $blue;
+	}		
+}
+
+@media screen and (max-width: 800px) {
+	.order__title {
+		margin-bottom: 20px;
+	}
+	.order__name-text, .order__phone-text {
+		margin-bottom: 8px;
+		font-size: 20px;
+	}		
+}
+
+@media screen and (max-width: 350px) {
+	.order {
+		padding-bottom: 30px;
+	}
+	.order__phone-input {
+		width: 300px;
+	}
+}

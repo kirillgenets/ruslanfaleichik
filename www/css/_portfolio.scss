@@ -164,3 +164,9 @@ PORTFOLIO SECTION
 		margin: 30px auto 0 auto;
 	}
 }
+
+@media screen and (max-width: 400px) {
+	.portfolio__titlebar {
+		margin-bottom: 0;
+	}
+}
