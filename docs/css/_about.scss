@@ -1,0 +1,93 @@
+/******
+ABOUT ME SECTION
+*******/
+
+.about__post {
+	margin: 0 0 60px 0;
+	padding: 0;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	align-items: center;
+}
+
+.about__post:nth-child(odd) {
+	-webkit-flex-direction: row-reverse;
+	-moz-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	-o-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+.about__image {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	height: 500px;	
+}
+
+.about__image_first {
+	background-image: url(../img/aboutImg1.jpg);
+}
+
+.about__image_second {
+	background-image: url(../img/aboutImg2.jpg); 
+}
+
+.about__text {
+	font-size: 36px;
+	font-weight: 300;
+	padding-left: 30px;
+	max-width: 330px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1048px) {
+	.about__image {
+		background-position: left top;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.about__image {
+		margin-bottom: 30px;
+	}
+
+	.about__info {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+
+	.about__text {
+		text-align: center;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.about__titlebar {
+		margin-bottom: 30px;
+	}
+
+	.about__image {
+		height: 300px;	
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.about__titlebar {
+		margin-bottom: 0;
+	}
+
+	.about__image {
+		height: 270px;	
+	}
+}

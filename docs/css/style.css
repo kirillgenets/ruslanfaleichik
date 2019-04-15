@@ -1,60 +1,13 @@
-/*reset*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-button:active, button:focus, .button:active, .button:focus {
-  outline: none !important; }
-
-button::-moz-focus-inner, .button::-moz-focus-inner {
-  border: 0 !important; }
-
 /*******
 SPECIFICATION
 *******/
+ul, li, p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
 body {
   font-family: 'PF Centro Sans Pro', sans-serif;
   color: #272838; }
@@ -71,7 +24,8 @@ a {
 .title {
   font-size: 36px;
   color: #fff;
-  margin: 60px 0; }
+  margin: 60px 0;
+  font-weight: 400; }
 
 /*TITLES RESPONSIVE*/
 @media screen and (max-width: 760px) {
@@ -82,14 +36,20 @@ a {
     font-size: 24px;
     margin: 30px 0; } }
 /*BUTTONS STYLING*/
-button, .button {
-  width: 150px;
-  height: 30px;
+.button {
+  padding: 5px 30px;
+  background-color: #272838;
   box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
   border: none; }
 
+.button:hover {
+  text-decoration: none;
+  color: #fff; }
+
 @media screen and (min-width: 1000px) {
-  button:hover, .button:hover {
+  .button:hover {
     cursor: pointer; } }
 /*INPUTS STYLING*/
 input[type=text] {
@@ -142,6 +102,14 @@ HEADER
   color: #fff;
   padding: 150px 0;
   z-index: 5; }
+
+.header__name {
+  font-size: 24px;
+  font-weight: 400; }
+
+.header__profession {
+  font-size: 18px;
+  font-weight: 400; }
 
 /*RESPONSIVE*/
 @media screen and (min-width: 1000px) {
@@ -286,13 +254,12 @@ PORTFOLIO SECTION
   margin-bottom: 20px; }
 
 .portfolio__post-button {
-  background-color: #272838;
   color: #fff;
   transition: 0.3s; }
 
 .portfolio__button {
   margin: 30px 0;
-  width: 240px;
+  padding: 5px 50px;
   background-color: #136F63;
   color: #fff;
   font-weight: 400;
@@ -437,25 +404,10 @@ CONTACTS SECTION
   margin-bottom: 85px; }
 
 .contacts__social-icon {
-  height: 80px;
-  width: 80px;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
   margin-right: 60px; }
 
-.contacts__social-icons a:last-child .contacts__social-icon {
+.contacts__social-icon_instagram {
   margin-right: 0; }
-
-.contacts__social-icon_fb {
-  background-image: url(../img/fb.png); }
-
-.contacts__social-icon_vk {
-  background-image: url(../img/vk.png); }
-
-.contacts__social-icon_inst {
-  background-image: url(../img/i.png); }
 
 /*RESPONSIVE*/
 @media screen and (max-width: 410px) {

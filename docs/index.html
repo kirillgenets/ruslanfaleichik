@@ -4,15 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Ruslan Faleichik</title>
+	<!-- connecting normalize -->
+	<link rel="stylesheet" href="css/normalize.css">
 	<!-- connecting bootstrap -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!-- connecting styles -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- connecting fonts -->
-	<link rel="stylesheet" href="fonts/PFCentroSansPro-Bold.ttf">
-	<link rel="stylesheet" href="fonts/PFCentroSansPro-Regular.ttf">
-	<link rel="stylesheet" href="fonts/PFCentroSansPro-Medium.ttf">
-	<link rel="stylesheet" href="fonts/PFCentroSansPro-Light.ttf">
+	<link rel="stylesheet" href="fonts/PFCentroSansPro-Bold.woff">
+	<link rel="stylesheet" href="fonts/PFCentroSansPro-Regular.woff">
+	<link rel="stylesheet" href="fonts/PFCentroSansPro-Medium.woff">
+	<link rel="stylesheet" href="fonts/PFCentroSansPro-Light.woff">
 </head>
 <body>
 
@@ -56,22 +58,22 @@
 				<div class="about__titlebar titlebar row col-xl-12 d-flex justify-content-center">
 					<h3 class="about__title title">About me</h3>
 				</div>
-				<article class="about__post row col-xl-12">
+				<div class="about__post row col-xl-12">
 					<div class="about__image about__image_first col-xl-8 col-lg-7 col-md-7 col-sm-12">
 							
 					</div>
 					<div class="about__info col-xl-4 col-lg-5 col-md-5 col-sm-12">
 						<p class="about__text">Hi! My name`s Ruslan and  I can make for you the best photoset in your life.</p>	
 					</div>
-				</article>
-				<article class="about__post row col-xl-12">
+				</div>
+				<div class="about__post row col-xl-12">
 					<div class="about__image about__image_second col-xl-8 col-lg-7 col-md-7 col-sm-12">
 							
 					</div>
 					<div class="about__info col-xl-4 col-lg-5 col-md-5 col-sm-12">
 						<p class="about__text">I specialize in portrait photography, but not only in it.</p>		
 					</div>
-				</article>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -98,10 +100,8 @@
 						<p class="portfolio__post-description">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo voluptatem aliquid molestiae consequatur fugiat culpa, facere asperiores suscipit vitae similique enim nihil magnam illo pariatur blanditiis et harum magni assumenda aspernatur, fuga, dicta ratione qui cupiditate! Debitis commodi, quo temporibus odit, voluptatibus officiis, dolorem voluptates, velit atque dignissimos perferendis.
 						</p>
-						<a href="#">
-							<button class="portfolio__post-button">
-								Show more
-							</button>
+						<a href="#" class="portfolio__post-button button">
+							Show more
 						</a>
 					</div>
 				</article>
@@ -119,10 +119,8 @@
 						<p class="portfolio__post-description">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo voluptatem aliquid molestiae consequatur fugiat culpa, facere asperiores suscipit vitae similique enim nihil magnam illo pariatur blanditiis et harum magni assumenda aspernatur, fuga, dicta ratione qui cupiditate! Debitis commodi, quo temporibus odit, voluptatibus officiis, dolorem voluptates, velit atque dignissimos perferendis.
 						</p>
-						<a href="#">
-							<button class="portfolio__post-button">
-								Show more
-							</button>
+						<a href="#" class="portfolio__post-button button">
+							Show more
 						</a>
 					</div>
 				</article>
@@ -140,23 +138,19 @@
 						<p class="portfolio__post-description">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo voluptatem aliquid molestiae consequatur fugiat culpa, facere asperiores suscipit vitae similique enim nihil magnam illo pariatur blanditiis et harum magni assumenda aspernatur, fuga, dicta ratione qui cupiditate! Debitis commodi, quo temporibus odit, voluptatibus officiis, dolorem voluptates, velit atque dignissimos perferendis.
 						</p>
-						<a href="#">
-							<button class="portfolio__post-button">
-								Show more
-							</button>
+						<a href="#" class="portfolio__post-button button">
+							Show more
 						</a>
 					</div>
 				</article>
-				<a href="#">
-					<button class="portfolio__button">
-						More photos on Dribbble
-					</button>
+				<a href="#" class="portfolio__button button">
+					More photos on Dribbble
 				</a>
 			</div>
 		</div>
 	</section>
 
-	<!-- PORTFOLIO SECTION -->
+	<!-- ORDER SECTION -->
 
 	<section class="order" id="order">
 		<div class="container-fluid">
@@ -164,7 +158,7 @@
 				<h3 class="order__title title">
 					Make an order
 				</h3>	
-				<form action="" class="order__form d-flex flex-column align-items-center">
+				<form action="post" class="order__form d-flex flex-column align-items-center">
 					<div class="order__name d-flex flex-column align-items-center">
 						<label for="name" class="order__name-text">Your name:</label>
 						<input id="name" type="text" class="order__name-input" placeholder="Write your name">
@@ -195,16 +189,22 @@
 						8-800-555-35-35
 					</p>
 				</div>
-				<ul class="contacts__social-icons">
-					<a href="https://facebook.com" target="_blank">
-						<li class="contacts__social-icon contacts__social-icon_fb"></li>
-					</a>
-					<a href="https://vk.com" target="_blank">
-						<li class="contacts__social-icon contacts__social-icon_vk"></li>
-					</a>
-					<a href="https://instagram.com" target="_blank">
-						<li class="contacts__social-icon contacts__social-icon_inst"></li>
-					</a>
+				<ul class="contacts__social-icons">					
+					<li class="contacts__social-icon contacts__social-icon_facebook">
+						<a href="https://facebook.com" target="_blank">
+							<img src="img/fb.png" alt="instagram">
+						</a>
+					</li>
+					<li class="contacts__social-icon contacts__social-icon_vk">
+						<a href="https://vk.com" target="_blank">
+							<img src="img/vk.png" alt="instagram">
+						</a>
+					</li>	
+					<li class="contacts__social-icon contacts__social-icon_instagram">
+						<a href="https://instagram.com" target="_blank">
+							<img src="img/i.png" alt="instagram">
+						</a>
+					</li>			
 				</ul>
 			</div>
 		</div>
