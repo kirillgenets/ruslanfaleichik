@@ -82,14 +82,20 @@ a {
     font-size: 24px;
     margin: 30px 0; } }
 /*BUTTONS STYLING*/
-button, .button {
-  width: 150px;
-  height: 30px;
+.button {
+  padding: 5px 30px;
+  background-color: #272838;
   box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
   border: none; }
 
+.button:hover {
+  text-decoration: none;
+  color: #fff; }
+
 @media screen and (min-width: 1000px) {
-  button:hover, .button:hover {
+  .button:hover {
     cursor: pointer; } }
 /*INPUTS STYLING*/
 input[type=text] {
@@ -286,13 +292,12 @@ PORTFOLIO SECTION
   margin-bottom: 20px; }
 
 .portfolio__post-button {
-  background-color: #272838;
   color: #fff;
   transition: 0.3s; }
 
 .portfolio__button {
   margin: 30px 0;
-  width: 240px;
+  padding: 5px 50px;
   background-color: #136F63;
   color: #fff;
   font-weight: 400;
@@ -437,25 +442,10 @@ CONTACTS SECTION
   margin-bottom: 85px; }
 
 .contacts__social-icon {
-  height: 80px;
-  width: 80px;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
   margin-right: 60px; }
 
-.contacts__social-icons a:last-child .contacts__social-icon {
+.contacts__social-icon_instagram {
   margin-right: 0; }
-
-.contacts__social-icon_fb {
-  background-image: url(../img/fb.png); }
-
-.contacts__social-icon_vk {
-  background-image: url(../img/vk.png); }
-
-.contacts__social-icon_inst {
-  background-image: url(../img/i.png); }
 
 /*RESPONSIVE*/
 @media screen and (max-width: 410px) {

@@ -31,29 +31,11 @@ CONTACTS SECTION
 }
 
 .contacts__social-icon {
-	height: 80px;
-	width: 80px;
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100%;
-	background-size: 100%;
 	margin-right: 60px;
 }
 
-.contacts__social-icons a:last-child .contacts__social-icon {
+.contacts__social-icon_instagram {
 	margin-right: 0;
-}
-
-.contacts__social-icon_fb {
-	background-image: url(../img/fb.png);
-}
-
-.contacts__social-icon_vk {
-	background-image: url(../img/vk.png);
-}
-
-.contacts__social-icon_inst {
-	background-image: url(../img/i.png);
 }
 
 /*RESPONSIVE*/

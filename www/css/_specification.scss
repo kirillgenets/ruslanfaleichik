@@ -97,15 +97,22 @@ a {
 
 /*BUTTONS STYLING*/
 
-button, .button {
-	width: 150px;
-	height: 30px;
+.button {
+	padding: 5px 30px;
+	background-color: $grey;
 	box-sizing: border-box;
+	text-decoration: none;
+	text-align: center;
 	border: none;
 }
 
+.button:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
 @media screen and (min-width: 1000px) {
-	button:hover, .button:hover {
+	.button:hover {
 		cursor: pointer;
 	}		
 }
