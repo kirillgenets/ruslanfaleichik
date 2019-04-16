@@ -162,6 +162,18 @@ PORTFOLIO SECTION
 		width: 300px;
 		margin: 30px auto 0 auto;
 	}
+
+	.portfolio__post-image_first {
+		background-image: url(../img/portfolioImg1_mobile.jpg);	
+	}
+
+	.portfolio__post-image_second {
+		background-image: url(../img/portfolioImg2_mobile.jpg);	
+	}
+
+	.portfolio__post-image_third {
+		background-image: url(../img/portfolioImg3_mobile.jpg);	
+	}
 }
 
 @media screen and (max-width: 400px) {

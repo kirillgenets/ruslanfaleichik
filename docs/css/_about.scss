@@ -80,6 +80,14 @@ ABOUT ME SECTION
 	.about__image {
 		height: 300px;	
 	}
+
+	.about__image_first {
+		background-image: url(../img/aboutImg1_mobile.jpg);
+	}
+
+	.about__image_second {
+		background-image: url(../img/aboutImg2_mobile.jpg); 
+	}
 }
 
 @media screen and (max-width: 400px) {

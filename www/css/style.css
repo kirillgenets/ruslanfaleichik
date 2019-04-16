@@ -84,7 +84,8 @@ HEADER
   margin: 0;
   padding: 0;
   height: 100%;
-  background: url(../img/headerImage.jpg) no-repeat;
+  background-image: url(../img/headerImage.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -117,7 +118,10 @@ HEADER
     color: #F34213; } }
 @media screen and (max-width: 410px) {
   .header__menu-item {
-    margin-right: 30px; } }
+    margin-right: 30px; }
+
+  .header__content {
+    background-image: url(../img/headerImage_mobile.jpg); } }
 @media screen and (max-width: 345px) {
   .header__menu-item {
     margin-right: 15px;
@@ -185,7 +189,13 @@ ABOUT ME SECTION
     margin-bottom: 30px; }
 
   .about__image {
-    height: 300px; } }
+    height: 300px; }
+
+  .about__image_first {
+    background-image: url(../img/aboutImg1_mobile.jpg); }
+
+  .about__image_second {
+    background-image: url(../img/aboutImg2_mobile.jpg); } }
 @media screen and (max-width: 400px) {
   .about__titlebar {
     margin-bottom: 0; }
@@ -320,7 +330,16 @@ PORTFOLIO SECTION
   .portfolio__info {
     padding-left: 0;
     width: 300px;
-    margin: 30px auto 0 auto; } }
+    margin: 30px auto 0 auto; }
+
+  .portfolio__post-image_first {
+    background-image: url(../img/portfolioImg1_mobile.jpg); }
+
+  .portfolio__post-image_second {
+    background-image: url(../img/portfolioImg2_mobile.jpg); }
+
+  .portfolio__post-image_third {
+    background-image: url(../img/portfolioImg3_mobile.jpg); } }
 @media screen and (max-width: 400px) {
   .portfolio__titlebar {
     margin-bottom: 0; } }
