@@ -1,0 +1,21 @@
+/*********
+NAVIGATION
+*********/
+
+.nav {
+	padding-top: 21px;
+	padding-bottom: 23px;
+}
+
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 240px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.nav__item-link {
+	font-size: 14px;
+}
