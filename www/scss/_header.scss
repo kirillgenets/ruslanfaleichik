@@ -9,7 +9,7 @@ HEADER
 	background: url(../img/header-image-mobile@1x.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: -90px;
+	background-position: center;
 	text-align: center;
 }
 
@@ -39,7 +39,6 @@ HEADER
 
 	.header__promo {
 		background-image: url(../img/header-image-mobile@2x.jpg);
-		background-position: -78px;
 	}
 
 }
