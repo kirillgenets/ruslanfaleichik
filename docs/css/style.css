@@ -305,8 +305,9 @@ SPECIFICATION
 body {
   min-width: 320px;
   color: #272838;
-  font-family: 'Oswald Regular', Arial, sans-serif;
-  overflow: hidden; }
+  font-family: 'PF Centro Sans Pro Regular', Tahoma, sans-serif;
+  overflow: hidden;
+  scroll-behavior: smooth; }
 
 img {
   max-width: 100%; }
@@ -332,13 +333,13 @@ input[type="radio"].visually-hidden {
 TYPOGRAPHY
 **********/
 @font-face {
-  font-family: 'Oswald Regular';
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-family: 'PF Centro Sans Pro Regular';
+  src: url("../fonts/PFCentroSansPro-Regular.woff2") format("woff2"), url("../fonts/PFCentroSansPro-Regular.woff") format("woff");
   font-display: swap; }
 
 @font-face {
-  font-family: 'Oswald Medium';
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-family: 'PF Centro Sans Pro Medium';
+  src: url("../fonts/PFCentroSansPro-Medium.woff2") format("woff2"), url("../fonts/PFCentroSansPro-Medium.woff") format("woff");
   font-display: swap; }
 
 /********
@@ -351,25 +352,39 @@ HEADER
   background: url(../img/header-image-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: -90px;
   text-align: center; }
 
+.header__promo-content {
+  width: 150px;
+  margin: 0 auto;
+  padding-top: 21px;
+  padding-bottom: 31px;
+  background-color: #fff; }
+
 .header__promo-name {
-  padding: 0;
   margin: 0;
-  color: #fff; }
+  padding: 0;
+  color: #272838;
+  font-size: 18px; }
 
 .header__promo-info {
-  padding: 0;
   margin: 0;
-  color: #fff; }
+  padding: 0;
+  color: #272838;
+  font-size: 14px; }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .header__promo {
+    background-image: url(../img/header-image-mobile@2x.jpg);
+    background-position: -78px; } }
 
 /*********
 NAVIGATION
 *********/
 .nav {
   padding-top: 21px;
-  padding-bottom: 23px; }
+  padding-bottom: 20px; }
 
 .nav__list {
   display: flex;
