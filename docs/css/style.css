@@ -398,6 +398,94 @@ NAVIGATION
 /**********
 ABOUT
 **********/
+.about__title {
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 19px;
+  background-color: #272838;
+  color: #fff;
+  text-align: center;
+  font-weight: normal; }
+
 .about__list {
   list-style: none;
+  width: 320px;
+  margin: 0 auto;
   padding: 0; }
+
+.about__item-photo {
+  width: 320px;
+  height: 350px; }
+
+.about__item-description {
+  width: 250px;
+  margin: 5px auto 15px auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px; }
+
+/**********
+PORTFOLIO
+**********/
+.portfolio {
+  text-align: center; }
+
+.portfolio__title {
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 19px;
+  background-color: #272838;
+  color: #fff;
+  font-weight: normal; }
+
+.portfolio__more {
+  margin-top: 3px;
+  padding: 5px 25px 4px 25px;
+  background-color: #136F63;
+  color: #fff;
+  font-size: 14px; }
+
+/********
+WORKS
+********/
+.works {
+  list-style: none;
+  width: 320px;
+  margin: 0 auto 3px auto;
+  padding: 0; }
+
+.works__item {
+  padding-bottom: 14px; }
+
+.works__item-image {
+  width: 320px;
+  height: 350px; }
+
+.works__item-title {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  color: #136F63;
+  font-family: 'PF Centro Sans Pro Medium', Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px; }
+
+.works__item-subtitle {
+  margin-top: 0;
+  margin-bottom: 7px;
+  color: #000;
+  font-size: 18px;
+  font-weight: normal; }
+
+.works__item-info {
+  width: 292px;
+  margin: 0 auto 12px auto;
+  color: #000;
+  font-size: 14px;
+  line-height: 17px; }
+
+.works__item-more {
+  padding: 4px 35px;
+  background-color: #272838;
+  color: #fff;
+  font-size: 14px; }
