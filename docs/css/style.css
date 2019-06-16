@@ -539,7 +539,7 @@ ORDER
 
 .order__submit {
   margin-bottom: 5px;
-  padding: 4px 45px;
+  padding: 3px 45px 4px 45px;
   border: none;
   background-color: #fff;
   color: #272838;
@@ -548,3 +548,22 @@ ORDER
 .order__hint {
   margin: 0;
   font-size: 11px; }
+
+/********
+CONTACTS
+********/
+.contacts {
+  text-align: center; }
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: normal; }
+
+.contacts__phone {
+  width: 160px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 4px 0 3px 0;
+  background-color: #272838;
+  color: #fff;
+  font-size: 14px; }
