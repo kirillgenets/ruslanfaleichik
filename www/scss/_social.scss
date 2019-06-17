@@ -15,3 +15,18 @@ SOCIAL
 	width: 45px;
 	height: 50px;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+
+	.social {
+		width: 305px;
+	}
+
+	.social__icon {
+		width: 63px;
+		height: 70px;
+	}
+	
+}

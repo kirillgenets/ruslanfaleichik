@@ -68,3 +68,46 @@ ORDER
 	margin: 0;
 	font-size: 11px;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+
+	.order {
+		margin-top: 24px;
+		padding-top: 35px;
+		padding-bottom: 37px;
+	}
+
+	.order__item {
+		margin-bottom: 21px;
+	}
+
+	.order__title {
+		margin-bottom: 24px;
+		font-size: 30px;
+	}
+
+	.order__item-explanation {
+		margin-bottom: 5px;
+		font-size: 18px;
+	}
+
+	.order__item-field {
+		height: 30px;
+		box-sizing: border-box;
+		font-size: 14px;
+
+		&--phone {
+			width: 250px;
+		}
+
+	}
+
+	.order__submit {
+		height: 20px;
+		box-sizing: border-box;
+		font-size: 14px;
+	}
+	
+}

@@ -50,3 +50,50 @@ WORKS
 	color: #fff;
 	font-size: 14px;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+	
+	.works {
+		width: 768px;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.works__item {
+		display: flex;
+		align-items: center;
+		padding-bottom: 0;
+		
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+
+	}
+
+	.works__item:nth-child(odd) .works__item-image {
+		margin-right: 60px;
+	}
+
+	.works__item:nth-child(even) .works__item-info {
+		margin-right: 30px;
+	}
+
+	.works__item-image {
+		width: 385px;
+		height: 350px;
+		vertical-align: bottom;
+	}
+
+	.works__item-title {
+		margin-top: 0;
+		margin-bottom: 15px;
+		font-size: 30px;
+	}
+
+	.works__item-subtitle {
+		margin-bottom: 3px;
+	}
+
+}
