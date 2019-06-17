@@ -29,7 +29,9 @@ ABOUT
 	width: 250px;
 	margin: 5px auto 15px auto;
 	text-align: center;
+	font-family: 'PF Centro Sans Pro Light', Tahoma, sans-serif;
 	font-size: 18px;
+	font-weight: 300;
 	line-height: 21px;
 }
 
@@ -48,12 +50,21 @@ ABOUT
 
 	.about__item {
 		display: flex;
+		align-items: center;
 		padding: 0;
 
 		&:last-child {
 			flex-direction: row-reverse;
 		}
 
+	}
+
+	.about__item:nth-child(odd) .about__item-photo {
+		margin-right: 70px;
+	}
+
+	.about__item:nth-child(even) .about__item-description {
+		margin-right: 70px;
 	}
 
 	.about__item-photo {
@@ -63,8 +74,11 @@ ABOUT
 	}
 
 	.about__item-description {
+		width: 250px;
+		margin: 0;
+		text-align: left;
 		font-size: 30px;
-		font-weight: 300;
+		line-height: 35px;
 	}
 	
 }

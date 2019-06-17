@@ -15,3 +15,10 @@ TYPOGRAPHY
 		url('../fonts/PFCentroSansPro-Medium.woff') format('woff');
 	font-display: swap;
 }
+
+@font-face {
+	font-family: 'PF Centro Sans Pro Light';
+	src: url('../fonts/PFCentroSansPro-Light.woff2') format('woff2'),
+		url('../fonts/PFCentroSansPro-Light.woff') format('woff');
+	font-display: swap;
+}
