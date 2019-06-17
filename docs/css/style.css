@@ -553,17 +553,48 @@ ORDER
 CONTACTS
 ********/
 .contacts {
+  padding-bottom: 10px;
   text-align: center; }
 
 .contacts__title {
+  margin-top: 15px;
+  margin-bottom: 12px;
   font-size: 24px;
   font-weight: normal; }
 
 .contacts__phone {
   width: 160px;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   padding: 4px 0 3px 0;
   background-color: #272838;
   color: #fff;
   font-size: 14px; }
+
+/*******
+SOCIAL
+*******/
+.social {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 195px;
+  margin: 0 auto;
+  padding: 0; }
+
+.social__icon {
+  width: 45px;
+  height: 50px; }
+
+/*******
+FOOTER
+*******/
+.footer {
+  padding: 14px;
+  background-color: #272838; }
+
+.footer__copyright {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 12px; }

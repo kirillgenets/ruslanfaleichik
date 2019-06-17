@@ -1,0 +1,17 @@
+/*******
+SOCIAL
+*******/
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 195px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.social__icon {
+	width: 45px;
+	height: 50px;
+}

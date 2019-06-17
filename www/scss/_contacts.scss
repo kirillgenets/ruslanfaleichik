@@ -3,10 +3,13 @@ CONTACTS
 ********/
 
 .contacts {
+	padding-bottom: 10px;
 	text-align: center;
 }
 
 .contacts__title {
+	margin-top: 15px;
+	margin-bottom: 12px;
 	font-size: 24px;
 	font-weight: normal;
 }
@@ -14,7 +17,7 @@ CONTACTS
 .contacts__phone {
 	width: 160px;
 	box-sizing: border-box;
-	margin: 0 auto;
+	margin: 0 auto 20px auto;
 	padding: 4px 0 3px 0;
 	background-color: $grey;
 	color: #fff;
