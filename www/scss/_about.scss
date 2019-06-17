@@ -32,3 +32,39 @@ ABOUT
 	font-size: 18px;
 	line-height: 21px;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+
+	.about__title {
+		padding: 35px 0;
+		font-size: 30px;
+	}
+
+	.about__list {
+		width: 768px;
+	}
+
+	.about__item {
+		display: flex;
+		padding: 0;
+
+		&:last-child {
+			flex-direction: row-reverse;
+		}
+
+	}
+
+	.about__item-photo {
+		width: 384px;
+		height: 350px;
+		vertical-align: bottom;
+	}
+
+	.about__item-description {
+		font-size: 30px;
+		font-weight: 300;
+	}
+	
+}

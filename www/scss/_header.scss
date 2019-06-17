@@ -13,27 +13,33 @@ HEADER
 	text-align: center;
 }
 
-.header__promo-content {
+.header__content {
 	width: 150px;
 	margin: 0 auto;
 	padding-top: 21px;
 	padding-bottom: 31px;
 	background-color: #fff;
+	color: $grey;
 }
 
-.header__promo-name {
+.header__logo {
+	width: 26px;
+	height: 49px;
+}
+
+.header__name {
 	margin: 0;
 	padding: 0;
-	color: #272838;
 	font-size: 18px;
 }
 
-.header__promo-info {
+.header__profession {
 	margin: 0;	
 	padding: 0;
-	color: #272838;
 	font-size: 14px;
 }
+
+/*RESPONSIVE*/
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
 
@@ -41,4 +47,44 @@ HEADER
 		background-image: url(../img/header-image-mobile@2x.jpg);
 	}
 
+}
+
+@media screen and (min-width: $tablet) {
+
+	.header__promo {
+		padding-top: 143px;
+		background-image: url(../img/header-image-tablet@1x.jpg);
+		background-size: 130%;
+		background-position: right top;
+	}
+
+	.header__content {
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+
+	.header__logo {
+		width: 40px;
+		height: 62px;
+		margin-bottom: 4px;
+	}
+
+	.header__name {
+		margin-bottom: 1px;
+		font-size: 24px;
+	}
+
+	.header__profession {
+		font-size: 18px;
+	}
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+		.header__promo {
+			background-image: url(../img/header-image-tablet@2x.jpg);
+		}
+
+	}
+	
 }

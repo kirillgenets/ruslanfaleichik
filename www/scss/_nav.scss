@@ -19,3 +19,28 @@ NAVIGATION
 .nav__item-link {
 	font-size: 14px;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+
+	.nav {
+		padding-top: 29px;
+		padding-bottom: 30px;
+	}
+	
+	.nav__list {
+		width: 373px;
+	}
+
+	.nav__item-link {
+		font-size: 18px;
+		transition: 0.3s;
+		
+		&:hover {
+			color: #F34213;
+		}
+
+	}
+
+}
