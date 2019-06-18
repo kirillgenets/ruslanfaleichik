@@ -52,17 +52,17 @@
 			<div class="nav">
 				<ul class="nav__list">
 					<li class="nav__item">
-						<a href="#about" class="nav__item-link">
+						<a href="#about" class="nav__item-link" tabindex="1">
 							Обо мне
 						</a>
 					</li>
 					<li class="nav__item">
-						<a href="#portfolio" class="nav__item-link">
+						<a href="#portfolio" class="nav__item-link" tabindex="2">
 							Портфолио
 						</a>
 					</li>
 					<li class="nav__item">
-						<a href="#order" class="nav__item-link">
+						<a href="#order" class="nav__item-link" tabindex="3">
 							Сделать заказ
 						</a>
 					</li>
@@ -101,7 +101,7 @@
 							<source media="(min-width: 768px)" srcset="img/about-image-first-tablet@1x.webp 1x, img/about-image-first-tablet@2x.webp 2x" type="image/webp">
 							<source media="(min-width: 768px)" srcset="img/about-image-first-tablet@1x.jpg 1x, img/about-image-first-tablet@2x.jpg 2x">
 							<source srcset="img/about-image-first-mobile@1x.webp 1x, img/about-image-first-mobile@2x.webp 2x" type="image/webp">
-							<img class="about__item-photo" src="img/about-image-first-mobile@1x.jpg" srcset="img/about-image-first-mobile@2x.jpg 2x" alt="Изображение фотографа">
+							<img class="about__item-photo" src="img/about-image-first-mobile@1x.jpg" srcset="img/about-image-first-mobile@2x.jpg 2x" alt="Изображение фотографа" tabindex="4">
 						</picture>
 						<p class="about__item-description">
 							Привет! Меня зовут Руслан и я могу сделать для тебя лучший фотосет в твоей жизни.
@@ -114,7 +114,7 @@
 							<source media="(min-width: 768px)" srcset="img/about-image-second-tablet@1x.webp 1x, img/about-image-second-tablet@2x.webp 2x" type="image/webp">
 							<source media="(min-width: 768px)" srcset="img/about-image-second-tablet@1x.jpg 1x, img/about-image-second-tablet@2x.jpg 2x">
 							<source srcset="img/about-image-second-mobile@1x.webp 1x, img/about-image-second-mobile@2x.webp 2x" type="image/webp">
-							<img class="about__item-photo" src="img/about-image-second-mobile@1x.jpg" srcset="img/about-image-second-mobile@2x.jpg 2x" alt="Изображение фотографа">
+							<img class="about__item-photo" src="img/about-image-second-mobile@1x.jpg" srcset="img/about-image-second-mobile@2x.jpg 2x" alt="Изображение фотографа" tabindex="5">
 						</picture>
 						<p class="about__item-description">
 							Я специализируюсь в портретной фотосъемке, но не только в ней.
@@ -150,7 +150,7 @@
 							<p class="works__item-info">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo voluptatem aliquid molestiae consequatur fugiat culpa, facere asperiores suscipit vitae similique enim nihil magnam illo pariatur blanditiis et harum magni assumenda aspernatur, fuga, dicta ratione qui cupiditate! Debitis commodi, quo temporibus odit, voluptatibus officiis, dolorem voluptates, velit atque dignissimos perferendis.
 							</p>
-							<a class="works__item-more" href="https://behance.net" target="_blank">
+							<a class="works__item-more" href="https://behance.net" target="_blank" tabindex="6">
 								Показать еще
 							</a>
 						</div>
@@ -177,7 +177,7 @@
 							<p class="works__item-info">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo voluptatem aliquid molestiae consequatur fugiat culpa, facere asperiores suscipit vitae similique enim nihil magnam illo pariatur blanditiis et harum magni assumenda aspernatur, fuga, dicta ratione qui cupiditate! Debitis commodi, quo temporibus odit, voluptatibus officiis, dolorem voluptates, velit atque dignissimos perferendis.
 							</p>
-							<a class="works__item-more" href="https://behance.net" target="_blank">
+							<a class="works__item-more" href="https://behance.net" target="_blank" tabindex="7">
 								Показать еще
 							</a>
 						</div>
@@ -204,13 +204,13 @@
 							<p class="works__item-info">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo voluptatem aliquid molestiae consequatur fugiat culpa, facere asperiores suscipit vitae similique enim nihil magnam illo pariatur blanditiis et harum magni assumenda aspernatur, fuga, dicta ratione qui cupiditate! Debitis commodi, quo temporibus odit, voluptatibus officiis, dolorem voluptates, velit atque dignissimos perferendis.
 							</p>
-							<a class="works__item-more" href="https://behance.net" target="_blank">
+							<a class="works__item-more" href="https://behance.net" target="_blank" tabindex="8">
 								Показать еще
 							</a>
 						</div>
 					</li>
 				</ul>
-				<a class="portfolio__more" href="https://behance.net" target="_blank">
+				<a class="portfolio__more" href="https://behance.net" target="_blank" tabindex="9">
 					Больше фото на Behance
 				</a>
 			</section>
@@ -225,16 +225,16 @@
 							<label class="order__item-explanation" for="customer-name">
 								Ваше имя:*
 							</label>
-							<input class="order__item-field order__item-field--name" id="customer-name" type="text" name="customer-name" placeholder="Александр" required="">
+							<input class="order__item-field order__item-field--name" id="customer-name" type="text" name="customer-name" placeholder="Александр" required="" tabindex="10">
 						</li>
 						<li class="order__item">
 							<label class="order__item-explanation" for="customer-phone">
 								Ваш номер телефона:*
 							</label>
-							<input class="order__item-field order__item-field--phone" id="customer-phone" type="tel" name="customer-phone" placeholder="8-800-555-35-35" required="">
+							<input class="order__item-field order__item-field--phone" id="customer-phone" type="tel" name="customer-phone" placeholder="8-800-555-35-35" required="" tabindex="11">
 						</li>
 					</ul>
-					<button class="order__submit" type="submit">
+					<button class="order__submit" type="submit" tabindex="12">
 						Позвоните мне!
 					</button>
 					<p class="order__hint">
@@ -253,17 +253,17 @@
 				<ul class="social">
 					<li class="social__item">
 						<a href="https://facebook.com" target="_blank" aria-label="Перейти на страницу фотографа в Facebook">
-							<img class="social__icon" src="img/icon-fb.svg" alt="Логотип Facebook">
+							<img class="social__icon" src="img/icon-fb.svg" alt="Логотип Facebook" tabindex="13">
 						</a>
 					</li>
 					<li class="social__item">
 						<a href="https://vk.com" target="_blank" aria-label="Перейти на страницу фотографа в ВКонтакте">
-							<img class="social__icon" src="img/icon-vk.svg" alt="Логотип ВКонтакте">
+							<img class="social__icon" src="img/icon-vk.svg" alt="Логотип ВКонтакте" tabindex="14">
 						</a>
 					</li>
 					<li class="social__item">
 						<a href="https://instagram.com" target="_blank" aria-label="Перейти на страницу фотографа в Instagram">
-							<img class="social__icon" src="img/icon-insta.svg" alt="Логотип Instagram">
+							<img class="social__icon" src="img/icon-insta.svg" alt="Логотип Instagram" tabindex="15">
 						</a>
 					</li>
 				</ul>
