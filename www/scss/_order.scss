@@ -124,3 +124,44 @@ ORDER
 	}
 	
 }
+
+@media screen and (min-width: $desktop) {
+
+	.order {
+		margin-top: 34px;
+		padding-top: 51px;
+		padding-bottom: 61px;
+	}
+
+	.order__title {
+		margin-bottom: 33px;
+		font-size: 36px;
+	}
+
+	.order__item-explanation {
+		margin-bottom: 11px;
+		font-size: 24px;
+	}
+
+	.order__item-field {
+		height: 50px;
+		font-size: 18px;
+
+		&--name {
+			width: 150px;
+		}
+
+		&--phone {
+			width: 330px;
+		}
+
+	}
+
+	.order__submit {
+		height: 30px;
+		margin-top: 4px;
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+
+}
