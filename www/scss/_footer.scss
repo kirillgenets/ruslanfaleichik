@@ -13,3 +13,15 @@ FOOTER
 	text-align: center;
 	font-size: 12px;
 }
+
+@media screen and (min-width: $desktop) {
+
+	.footer {
+		padding: 24px;
+	}
+
+	.footer__copyright {
+		font-size: 14px;
+	}
+
+}

@@ -45,3 +45,23 @@ CONTACTS
 	}
 	
 }
+
+@media screen and (min-width: $desktop) {
+
+	.contacts {
+		padding-bottom: 76px;		
+	}
+
+	.contacts__title {
+		margin-top: 62px;
+		font-size: 36px;
+	}
+
+	.contacts__phone {
+		width: 312px;
+		margin-bottom: 60px;
+		padding: 14px 0;
+		font-size: 24px;
+	}
+
+}

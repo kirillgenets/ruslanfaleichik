@@ -826,6 +826,18 @@ CONTACTS
     padding: 9px 0;
     font-size: 18px; } }
 
+@media screen and (min-width: 1220px) {
+  .contacts {
+    padding-bottom: 76px; }
+  .contacts__title {
+    margin-top: 62px;
+    font-size: 36px; }
+  .contacts__phone {
+    width: 312px;
+    margin-bottom: 60px;
+    padding: 14px 0;
+    font-size: 24px; } }
+
 /*******
 SOCIAL
 *******/
@@ -852,7 +864,14 @@ SOCIAL
     height: 70px;
     transition: 0.3s; }
     .social__icon:hover {
-      opacity: 0.8; } }
+      opacity: 0.6; } }
+
+@media screen and (min-width: 1220px) {
+  .social {
+    width: 352px; }
+  .social__icon {
+    width: 73px;
+    height: 80px; } }
 
 /*******
 FOOTER
@@ -866,3 +885,9 @@ FOOTER
   color: #fff;
   text-align: center;
   font-size: 12px; }
+
+@media screen and (min-width: 1220px) {
+  .footer {
+    padding: 24px; }
+  .footer__copyright {
+    font-size: 14px; } }

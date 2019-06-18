@@ -35,9 +35,22 @@ SOCIAL
 		transition: 0.3s;
 
 		&:hover {
-			opacity: 0.8;
+			opacity: 0.6;
 		}
 
 	}
 	
+}
+
+@media screen and (min-width: $desktop) {
+
+	.social {
+		width: 352px;
+	}
+
+	.social__icon {
+		width: 73px;
+		height: 80px;
+	}
+
 }
