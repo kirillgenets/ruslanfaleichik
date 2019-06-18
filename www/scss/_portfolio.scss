@@ -49,3 +49,16 @@ PORTFOLIO
 	}
 	
 }
+
+@media screen and (min-width: $desktop) {
+
+	.portfolio__title {
+		padding: 57px 0;
+		font-size: 36px;
+	}
+
+	.portfolio__more {
+		font-size: 18px;
+	}
+
+}
