@@ -22,6 +22,11 @@ PORTFOLIO
 	background-color: $green;
 	color: #fff;
 	font-size: 14px;
+
+	&:active {
+		opacity: 0.5;
+	}
+
 }
 
 /*RESPONSIVE*/
@@ -32,6 +37,15 @@ PORTFOLIO
 		padding: 34px 0;
 		text-align: center;
 		font-size: 30px;
+	}
+
+	.portfolio__more {
+		transition: 0.3s;
+
+		&:hover {
+			background-color: $grey;
+		}
+
 	}
 	
 }

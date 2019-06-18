@@ -49,6 +49,11 @@ WORKS
 	background-color: $grey;
 	color: #fff;
 	font-size: 14px;
+
+	&:active {
+		opacity: 0.5;
+	}
+
 }
 
 /*RESPONSIVE*/
@@ -94,6 +99,15 @@ WORKS
 
 	.works__item-subtitle {
 		margin-bottom: 3px;
+	}
+
+	.works__item-more {
+		transition: 0.3s;
+		
+		&:hover {
+			background-color: $green;
+		}
+
 	}
 
 }

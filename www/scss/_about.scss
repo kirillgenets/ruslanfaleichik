@@ -82,3 +82,37 @@ ABOUT
 	}
 	
 }
+
+@media screen and (min-width: $desktop) {
+
+	.about__title {
+		padding: 57px 0;
+		font-size: 36px;
+	}
+
+	.about__list {
+		width: 1300px;
+		margin-top: 68px;
+		margin-bottom: 52px;
+	}
+
+	.about__item {
+		margin-bottom: 56px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+	
+	.about__item-photo {
+		width: 735px;
+		height: 400px;
+	}
+
+	.about__item-description {
+		width: 330px;
+		font-size: 36px;
+	}
+
+}

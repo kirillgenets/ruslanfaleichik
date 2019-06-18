@@ -18,6 +18,11 @@ NAVIGATION
 
 .nav__item-link {
 	font-size: 14px;
+
+	&:focus {
+		opacity: 0.5;
+	}
+
 }
 
 /*RESPONSIVE*/
@@ -41,6 +46,15 @@ NAVIGATION
 			color: #F34213;
 		}
 
+	}
+
+}
+
+@media screen and (min-width: $desktop) {
+
+	.nav {
+		padding-top: 31px;
+		padding-bottom: 29px;
 	}
 
 }

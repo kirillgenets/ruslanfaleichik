@@ -88,3 +88,12 @@ HEADER
 	}
 	
 }
+
+@media screen and (min-width: $desktop) {
+
+	.header__promo {
+		background-image: url(../img/header-image-desktop@1x.jpg);
+		background-size: 150%;
+	}
+
+}
