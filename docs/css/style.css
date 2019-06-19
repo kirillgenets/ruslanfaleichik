@@ -353,7 +353,8 @@ HEADER
   height: 440px;
   box-sizing: border-box;
   padding-top: 150px;
-  background: url(../img/header-image-mobile@1x.jpg);
+  background-color: #272838;
+  background-image: url(../img/header-image-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
