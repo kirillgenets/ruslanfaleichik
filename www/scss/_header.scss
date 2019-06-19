@@ -96,4 +96,12 @@ HEADER
 		background-size: 150%;
 	}
 
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+		.header__promo {
+			background-image: url(../img/header-image-desktop@2x.jpg);
+		}
+
+	}
+
 }

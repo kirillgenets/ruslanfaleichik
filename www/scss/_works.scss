@@ -77,18 +77,18 @@ WORKS
 
 	}
 
+	.works__item-image {
+		width: 385px;
+		height: 350px;
+		vertical-align: bottom;
+	}
+
 	.works__item:nth-child(odd) .works__item-image {
 		margin-right: 60px;
 	}
 
 	.works__item:nth-child(even) .works__item-info {
 		margin-right: 30px;
-	}
-
-	.works__item-image {
-		width: 385px;
-		height: 350px;
-		vertical-align: bottom;
 	}
 
 	.works__item-title {
@@ -120,17 +120,24 @@ WORKS
 		padding-top: 60px;
 	}
 
+	.works__item-image {
+		width: 645px;
+		height: 396px;
+	}
+
+	.works__item-info {
+		width: 400px;
+		margin-bottom: 17px;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
 	.works__item:nth-child(odd) .works__item-image {
 		margin-right: 60px;
 	}
 
 	.works__item:nth-child(even) .works__item-info {
 		margin-right: 120px;
-	}
-
-	.works__item-image {
-		width: 645px;
-		height: 396px;
 	}
 
 	.works__item-title {
@@ -141,13 +148,6 @@ WORKS
 	.works__item-subtitle {
 		margin-bottom: 10px;
 		font-size: 24px;
-	}
-
-	.works__item-info {
-		width: 400px;
-		margin-bottom: 17px;
-		font-size: 18px;
-		line-height: 22px;
 	}
 
 	.works__item-more {

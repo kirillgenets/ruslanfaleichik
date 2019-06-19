@@ -415,6 +415,10 @@ HEADER
     background-image: url(../img/header-image-desktop@1x.jpg);
     background-size: 150%; } }
 
+@media screen and (min-width: 1220px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 1220px) and (min-resolution: 144dpi), screen and (min-width: 1220px) and (min-resolution: 1.5dppx) {
+  .header__promo {
+    background-image: url(../img/header-image-desktop@2x.jpg); } }
+
 /*********
 NAVIGATION
 *********/
@@ -498,10 +502,6 @@ ABOUT
     padding: 0; }
     .about__item:nth-child(even) {
       flex-direction: row-reverse; }
-  .about__item:nth-child(odd) .about__item-photo {
-    margin-right: 70px; }
-  .about__item:nth-child(even) .about__item-description {
-    margin-right: 70px; }
   .about__item-photo {
     width: 384px;
     height: 350px;
@@ -511,7 +511,11 @@ ABOUT
     margin: 0;
     text-align: left;
     font-size: 30px;
-    line-height: 35px; } }
+    line-height: 35px; }
+  .about__item:nth-child(odd) .about__item-photo {
+    margin-right: 70px; }
+  .about__item:nth-child(even) .about__item-description {
+    margin-right: 70px; } }
 
 @media screen and (min-width: 1220px) {
   .about__title {
@@ -633,14 +637,14 @@ WORKS
     padding-bottom: 0; }
     .works__item:nth-child(even) {
       flex-direction: row-reverse; }
-  .works__item:nth-child(odd) .works__item-image {
-    margin-right: 60px; }
-  .works__item:nth-child(even) .works__item-info {
-    margin-right: 30px; }
   .works__item-image {
     width: 385px;
     height: 350px;
     vertical-align: bottom; }
+  .works__item:nth-child(odd) .works__item-image {
+    margin-right: 60px; }
+  .works__item:nth-child(even) .works__item-info {
+    margin-right: 30px; }
   .works__item-title {
     margin-top: 0;
     margin-bottom: 15px;
@@ -657,24 +661,24 @@ WORKS
     width: 1220px;
     margin-bottom: 36px;
     padding-top: 60px; }
+  .works__item-image {
+    width: 645px;
+    height: 396px; }
+  .works__item-info {
+    width: 400px;
+    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 22px; }
   .works__item:nth-child(odd) .works__item-image {
     margin-right: 60px; }
   .works__item:nth-child(even) .works__item-info {
     margin-right: 120px; }
-  .works__item-image {
-    width: 645px;
-    height: 396px; }
   .works__item-title {
     font-size: 36px;
     margin-bottom: 7px; }
   .works__item-subtitle {
     margin-bottom: 10px;
     font-size: 24px; }
-  .works__item-info {
-    width: 400px;
-    margin-bottom: 17px;
-    font-size: 18px;
-    line-height: 22px; }
   .works__item-more {
     padding: 4px 32px;
     font-size: 18px; } }
