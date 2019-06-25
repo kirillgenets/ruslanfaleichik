@@ -299,6 +299,48 @@ template {
 [hidden] {
   display: none; }
 
+/*******
+ANIMATIONS
+*******/
+@-webkit-keyframes slide-to-right {
+  from {
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; } }
+@keyframes slide-to-right {
+  from {
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes slide-to-left {
+  from {
+    -webkit-transform: translateX(50vw);
+            transform: translateX(50vw);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes slide-to-left {
+  from {
+    -webkit-transform: translateX(50vw);
+            transform: translateX(50vw);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; } }
+
 /********************
 SPECIFICATION
 ********************/
@@ -524,7 +566,7 @@ ABOUT
     font-size: 36px; }
   .about__list {
     width: 1220px;
-    margin-top: 68px;
+    margin-top: 78px;
     margin-bottom: 52px; }
   .about__item {
     margin-bottom: 56px; }
