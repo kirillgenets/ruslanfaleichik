@@ -2,30 +2,34 @@
 ANIMATIONS
 *******/
 
-@keyframes slide-to-right {
+@media screen and (min-width: $tablet) {
 
-	from {
-		transform: translateX(-50vw);
-		opacity: 0;
+	@keyframes slide-to-right {
+
+		from {
+			transform: translateX(-50vw);
+			opacity: 0;
+		}
+
+		to {
+			transform: translateX(0);
+			opacity: 1;
+		} 
+
 	}
 
-	to {
-		transform: translateX(0);
-		opacity: 1;
-	} 
+	@keyframes slide-to-left {
 
-}
+		from {
+			transform: translateX(50vw);
+			opacity: 0;
+		}
 
-@keyframes slide-to-left {
+		to {
+			transform: translateX(0);
+			opacity: 1;
+		} 
 
-	from {
-		transform: translateX(50vw);
-		opacity: 0;
-	}
-
-	to {
-		transform: translateX(0);
-		opacity: 1;
-	} 
+	}	
 
 }

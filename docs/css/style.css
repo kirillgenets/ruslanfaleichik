@@ -302,44 +302,43 @@ template {
 /*******
 ANIMATIONS
 *******/
-@-webkit-keyframes slide-to-right {
-  from {
-    -webkit-transform: translateX(-50vw);
-            transform: translateX(-50vw);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1; } }
-@keyframes slide-to-right {
-  from {
-    -webkit-transform: translateX(-50vw);
-            transform: translateX(-50vw);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1; } }
-
-@-webkit-keyframes slide-to-left {
-  from {
-    -webkit-transform: translateX(50vw);
-            transform: translateX(50vw);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes slide-to-left {
-  from {
-    -webkit-transform: translateX(50vw);
-            transform: translateX(50vw);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1; } }
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes slide-to-right {
+    from {
+      -webkit-transform: translateX(-50vw);
+              transform: translateX(-50vw);
+      opacity: 0; }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1; } }
+  @keyframes slide-to-right {
+    from {
+      -webkit-transform: translateX(-50vw);
+              transform: translateX(-50vw);
+      opacity: 0; }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1; } }
+  @-webkit-keyframes slide-to-left {
+    from {
+      -webkit-transform: translateX(50vw);
+              transform: translateX(50vw);
+      opacity: 0; }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1; } }
+  @keyframes slide-to-left {
+    from {
+      -webkit-transform: translateX(50vw);
+              transform: translateX(50vw);
+      opacity: 0; }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1; } } }
 
 /********************
 SPECIFICATION
@@ -349,6 +348,9 @@ body {
   color: #272838;
   font-family: 'PF Centro Sans Pro Regular', Tahoma, sans-serif;
   scroll-behavior: smooth; }
+
+main {
+  overflow-x: hidden; }
 
 img {
   max-width: 100%; }

@@ -9,6 +9,10 @@ body {
 	scroll-behavior: smooth;
 }
 
+main {
+	overflow-x: hidden;
+}
+
 img {
 	max-width: 100%;
 }
