@@ -3,6 +3,30 @@ let aboutSlidingBlocksRight = document.querySelectorAll('.about__item:nth-child(
 let portfolioSlidingBlocksLeft = document.querySelectorAll('.works__item:nth-child(odd)');
 let portfolioSlidingBlocksRight = document.querySelectorAll('.works__item:nth-child(even)');
 
+for (let i = 0; i < aboutSlidingBlocksLeft.length; i++) {
+
+	aboutSlidingBlocksLeft[i].style.opacity = '0';
+
+}
+
+for (let i = 0; i < aboutSlidingBlocksRight.length; i++) {
+
+	aboutSlidingBlocksRight[i].style.opacity = '0';
+
+}
+
+for (let i = 0; i < portfolioSlidingBlocksLeft.length; i++) {
+
+	portfolioSlidingBlocksLeft[i].style.opacity = '0';
+
+}
+
+for (let i = 0; i < portfolioSlidingBlocksRight.length; i++) {
+
+	portfolioSlidingBlocksRight[i].style.opacity = '0';
+
+}
+
 function slideToRight(element) {
 
 	let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
@@ -36,6 +60,7 @@ window.addEventListener('scroll', function() {
 		setTimeout(function() {
 
 			slideToLeft(aboutSlidingBlocksLeft[i]);
+			aboutSlidingBlocksLeft[i].style.opacity = '1';
 
 		}, 0);	
 
@@ -46,6 +71,7 @@ window.addEventListener('scroll', function() {
 		setTimeout(function() {
 
 			slideToRight(aboutSlidingBlocksRight[i]);
+			aboutSlidingBlocksRight[i].style.opacity = '1';
 			
 		}, 100);
 
@@ -56,8 +82,9 @@ window.addEventListener('scroll', function() {
 		setTimeout(function() {
 
 			slideToLeft(portfolioSlidingBlocksLeft[i]);
+			portfolioSlidingBlocksLeft[i].style.opacity = '1';
 			
-		}, 1000);	
+		}, 100);	
 
 	}
 
@@ -66,6 +93,7 @@ window.addEventListener('scroll', function() {
 		setTimeout(function() {
 
 			slideToRight(portfolioSlidingBlocksRight[i]);
+			portfolioSlidingBlocksRight[i].style.opacity = '1';
 			
 		}, 100);	
 
